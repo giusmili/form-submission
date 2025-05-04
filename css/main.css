@@ -30,6 +30,13 @@ header h1 kbd{
     border: 0;
     background-color: #a52a2a;
 }
+.warning{
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    border: solid .1rem transparent;
+}
 footer *{
     text-align: center;
 }

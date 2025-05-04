@@ -28,7 +28,15 @@
 
 
     <?php if (isset($_GET['success'])): ?>
-        <p class="warning">Enregistrement réussi !  <!-- <?= htmlspecialchars($_GET['id']) ?> --></p>
+        <p class="warning">
+            ✅ Enregistrement réussi !  <!-- <?= htmlspecialchars($_GET['id']) ?> --><br>
+           <!--  <?php foreach ($submissions as $sub): ?>
+                Login : <?= htmlspecialchars($sub['login']) ?><br>
+                   Admin : <?= $sub['admin'] ? 'Oui' : 'Non' ?><br>
+                   Date d'inscrisption : <?= htmlspecialchars($sub['created_at']) ?>
+                </tr>
+            <?php endforeach; ?> -->
+        </p>
     <?php endif; ?>
 
 
