@@ -9,7 +9,7 @@ class Admin{
             $admin = isset($_POST['admin']) ? 1 : 0;
             $text = isset($_POST['texte']) ? $_POST['texte'] : false;
      
-            print "<p>Admin : " .$admin. "<br>".$login. "<br>".$password."<br>".htmlentities($text)."</p>";
+            print "<li>Admin : " .$admin. "</li><li>Login: ".$login. "</li><li>Password : ".$password."</li>";
         }
     }
 

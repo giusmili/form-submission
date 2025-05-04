@@ -26,6 +26,10 @@ header h1 kbd{
     background-color: #ece6e6;
     border-radius: .4rem;
 }
+.warning{
+    max-width: 80rem;
+    margin: 0 auto;
+}
 .button, button, input[type="button"], input[type="reset"], input[type="submit"]{
     border: 0;
     background-color: #a52a2a;

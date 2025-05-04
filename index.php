@@ -16,13 +16,16 @@
         </h1>
     </header>
     <main>
+        <ul>
+            <?php
+                include_once __DIR__ .'/controller/baseController.php';
+            ?>
+        </ul>
         <fieldset>
             <legend>
                 Remplir les champs
             </legend>
-    <?php
-        include_once __DIR__ .'/controller/baseController.php';
-    ?>
+    
     <form action="index.php" method="post">
   
         <label for="login">Login</label>
