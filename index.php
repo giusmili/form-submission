@@ -15,7 +15,15 @@
         Compléter le code <kbd>PHP</kbd> suivant
         </h1>
     </header>
+    
     <main>
+
+
+    <?php if (isset($_GET['success'])): ?>
+        <p>Enregistrement réussi ! ID = <?= htmlspecialchars($_GET['id']) ?></p>
+    <?php endif; ?>
+
+    
         <fieldset>
             <legend>
                 Remplir les champs
