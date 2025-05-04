@@ -3,7 +3,9 @@ body{
     grid-template-rows: auto 1fr auto;
     min-height: 100svh;
 }
-
+ul,ol{
+    list-style-type: none;
+}
 fieldset{
     max-width: 80rem;
     margin: 0 auto;
@@ -29,6 +31,7 @@ header h1 kbd{
 .warning{
     max-width: 80rem;
     margin: 0 auto;
+    
 }
 .button, button, input[type="button"], input[type="reset"], input[type="submit"]{
     border: 0;

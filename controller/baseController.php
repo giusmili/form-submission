@@ -7,9 +7,10 @@ class Admin{
             $login = isset($_POST["login"]) ? $_POST["login"] : 0;
             $password = isset($_POST["password"]) ? password_hash($_POST["login"], PASSWORD_DEFAULT) : false;
             $admin = isset($_POST['admin']) ? 1 : 0;
-            $text = isset($_POST['texte']) ? $_POST['texte'] : false;
+
      
-            print "<li>Admin : " .$admin. "</li><li>Login: ".$login. "</li><li>Password : ".$password."</li>";
+            print "<li>✅ Admin : " .$admin. "</li>
+            <li>✅ Login: ".$login. "</li><li>✅ Password : ".$password."</li>";
         }
     }
 
