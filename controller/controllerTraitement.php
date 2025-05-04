@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 # 3. Récupération de toutes les soumissions
-$sqlAll = 'SELECT id, login, admin, created_at FROM form_submissions ORDER BY created_at DESC';
+/* $sqlAll = 'SELECT id, login, admin, created_at FROM form_submissions ORDER BY created_at DESC';
 $stmtAll = $pdo->query($sqlAll);
-$submissions = $stmtAll->fetchAll();
+$submissions = $stmtAll->fetchAll(); */
 

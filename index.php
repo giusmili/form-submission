@@ -1,3 +1,11 @@
+<?php
+    # appel du modèle et controlleur
+
+    include_once __DIR__ .'./model/bdd.php';
+    include_once __DIR__ .'./controller/controllerTraitement.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +28,7 @@
 
 
     <?php if (isset($_GET['success'])): ?>
-        <p>Enregistrement réussi ! ID = <?= htmlspecialchars($_GET['id']) ?></p>
+        <p class="warning">Enregistrement réussi !  <!-- <?= htmlspecialchars($_GET['id']) ?> --></p>
     <?php endif; ?>
 
 
@@ -29,7 +37,7 @@
                 Remplir les champs
             </legend>
     <?php
-        include_once __DIR__ .'/controller/baseController.php';
+        /* include_once __DIR__ .'/controller/baseController.php'; */
     ?>
     <form action="index.php" method="post">
 
