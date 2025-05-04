@@ -24,13 +24,12 @@
         include_once __DIR__ .'/controller/baseController.php';
     ?>
     <form action="index.php" method="post">
-    <label>Votre texte</label>
-        <input type="text" name="texte" placeholder="Votre texte" aria-required="true" required>
-        <label>Login</label>
-            <input type="email" name="login" placeholder="Votre login" aria-required="true" required>
+  
+        <label for="login">Login</label>
+            <input type="email" id="login" name="login" placeholder="Votre login" aria-required="true" required>
        
-        <label>Mot de passe</label>
-            <input type="password" name="password" placeholder="Votre mot de passe" aria-required="true" required>
+        <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe" aria-required="true" required>
       
         <label>
             <input type="checkbox" name="admin" value="1"> Vous êtes admin 🔒
